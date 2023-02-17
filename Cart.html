@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="music, albums, trend, classic, jazz, live, singer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Cart</title>
+    <link rel="icon" type="image/x-icon" href="./content/Icon.png">
+    <link href="MyStyle.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav">
+                            <a class="navbar-brand" aria-current="page" href="Index.html"><img class="nav-logo"
+                                    alt="nav-logo" src="./content/Nav_logo_new-removebg-preview (1).png"></a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="NewlyLunched.html">Newly-arrivied</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Upcomming.html">Upcomming</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Cart.html">
+                               My Cart
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Artists.html">Artists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact-us.html">Contact-US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About US.html">About-US</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="body" class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <p class="h1">Welcome To The World Of Music</p>
+                </div>
+            </div>
+
+         <div class="row">
+            <fieldset class="Group-box">
+                <div class="col-sm-12 col-lg-12 col-md-12 col-xl-12 col-xxl-12">
+                    <legend>
+                        <p>My cart</p>
+                    </legend>
+                </div>
+            
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+                        <h4 class="badge-pill badge-light mt-3 mb-3 p-2 text-center">My Cart</h4>
+                        <div class="cart"></div>
+                      </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+                      <h4 class="badge-pill badge-light mt-3 mb-3 p-2 text-center">Products</h4>
+                      <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+                          <div class="shadow-sm card mb-3 product">
+                            <img class="product-img" src="./content/albums/Jaction-5.webp" alt="Jaction-5" onmouseover="animateImg(this)"
+                            onmouseout="normalImg(this)"/>
+                            <div class="card-body">
+                              <h5 class="card-title bold product-name">Jaction-5</h5>
+                              <p class="card-text product-price"> 9.0 £</p>
+                              <button class="btn badge badge-pill badge-secondary mt-2 float-right" type="button"
+                                data-action="add-to-cart">Add to cart</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+                          <div class="shadow-sm card mb-3 product">
+                            <img class="product-img" src="./content/Newly Lunched/Vintage Song Mixtape Video Album Cover Templa - Made with PosterMyWall.gif" alt="Vintage" onmouseover="animateImg(this)"
+                            onmouseout="normalImg(this)"/>
+                            <div class="card-body">
+                              <h5 class="card-title product-name">Vintage</h5>
+                              <p class="card-text product-price"> 9.0 £</p>
+                              <button class="btn badge badge-pill badge-secondary mt-2 float-right" type="button"
+                              data-action="add-to-cart">Add to cart</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+                            <div class="shadow-sm card mb-3 product">
+                                <img class="product-img" src="./content/Newly Lunched/The Police.webp" alt="The Police"
+                                    onmouseover="animateImg(this)" onmouseout="normalImg(this)" />
+                                <div class="card-body">
+                                    <h5 class="card-title product-name">The Police</h5>
+                                    <p class="card-text product-price"> 5.0 £</p>
+                                    <button class="btn badge badge-pill badge-secondary mt-2 float-right" type="button"
+                                        data-action="add-to-cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+                            <div class="shadow-sm card mb-3 product">
+                                <img class="product-img" src="./content/Newly Lunched/Ride the lighting.webp" alt="Ride the lighting"
+                                    onmouseover="animateImg(this)" onmouseout="normalImg(this)" />
+                                <div class="card-body">
+                                    <h5 class="card-title product-name">Ride the lighting</h5>
+                                    <p class="card-text product-price"> 8.0 £</p>
+                                    <button class="btn badge badge-pill badge-secondary mt-2 float-right" type="button"
+                                        data-action="add-to-cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+                            <div class="shadow-sm card mb-3 product">
+                                <img class="product-img" src="./content/Newly Lunched/Hotel California.webp" alt="Hotel California"
+                                    onmouseover="animateImg(this)" onmouseout="normalImg(this)" />
+                                <div class="card-body">
+                                    <h5 class="card-title product-name">Hotel California</h5>
+                                    <p class="card-text product-price"> 10.0 £</p>
+                                    <button class="btn badge badge-pill badge-secondary mt-2 float-right" type="button"
+                                        data-action="add-to-cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+                            <div class="shadow-sm card mb-3 product">
+                                <img class="product-img" src="./content/albums/Futures.gif" alt="Futures"
+                                    onmouseover="animateImg(this)" onmouseout="normalImg(this)" />
+                                <div class="card-body">
+                                    <h5 class="card-title product-name">Futures</h5>
+                                    <p class="card-text product-price"> 7.0 £</p>
+                                    <button class="btn badge badge-pill badge-secondary mt-2 float-right" type="button"
+                                        data-action="add-to-cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+
+            </fieldset>
+        </div>
+    </main>
+
+        <footer>
+            <marquee>
+                <p class="footer">
+                    Copyright &#169;2023 A1 Music Retailor. All rights reserved
+                </p>
+            </marquee>
+
+            <div class="line"></div>
+            <ul>
+                <li class="footer-socials"><a class="socials" href="https://m.facebook.com/" target="_blank"><img
+                            src="./content/socials/icons8-facebook-48.png" alt="facebook">
+                </li>
+                </a>
+                <li class="footer-socials"><a class="socials" href="https://www.instagram.com/" target="_blank"><img
+                            src="./content/socials/icons8-instagram-48.png" alt="instagram">
+                </li>
+                </a>
+                <li class="footer-socials"><a class="socials" href="https://twitter.com/?lang=en" target="_blank"><img
+                            src="./content/socials/icons8-twitter-48.png" alt="twitter"></li>
+                </a>
+                <li class="footer-socials"><a class="socials" href="https://www.youtube.com/" target="_blank"><img
+                            src="./content/socials/icons8-youtube-48.png" alt="youtube"></li>
+                </a>
+                </div>
+                </div>
+                <!-- <li class="list-group-item"><img class="footer" src="./content/footer logo (1).png" alt="sign"> -->
+                </li></a>
+                </div>
+            </ul>
+            </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
